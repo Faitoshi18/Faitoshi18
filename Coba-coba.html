@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Seminar Teknologi</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: url('form web jadi contoh.png') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 15px;         
+      left: 15px;       
+      z-index: 10;
+    }
+
+    .logo-container img {
+      max-width: 120px; 
+      height: auto;
+    }
+    .wrapper-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      box-sizing: border-box;
+    }
+    h2 { text-align: center; font-size: 1.2rem; margin-top: 0; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      outline: none;
+      box-sizing: border-box;
+    }
+    input:focus { border-bottom: 2px solid #4CAF50; }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="Logo Faisal Iroyama Service.png" alt="Logo">
+  </div>
+
+  <div class="wrapper-form">
+    <form action="register.php" method="post">
+      <h2>Pendaftaran Seminar</h2>
+      
+      <label>Nama Lengkap:</label>
+      <input type="text" name="nama" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Nomor HP:</label>
+      <input type="tel" name="hp" required>
+
+      <label>Pilih Sesi:</label>
+      <select name="sesi" required>
+        <option value="">-- Pilih Sesi --</option>
+        <option value="pagi">Sesi Pagi</option>
+        <option value="siang">Sesi Siang</option>
+      </select>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </div>
+
+</body>
+</html>
+  
+      
+
